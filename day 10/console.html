@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console log and table</title>
+</head>
+
+<body>
+    <script>
+        // dictionaries
+        var person = {
+            fisrtName0: 'john',
+            fisrtName1: 'john33',
+            fisrtName2: 'john10',
+            fisrtName3: 'john4',
+            fisrtName4: 'john4',
+            fisrtName5: 'john3',
+
+        };
+        // consle table and log
+        console.table(person);
+        console.log(person.fisrtName0);
+        var op = {
+                q1: 12,
+                q2: 22,
+                q3: 45
+            }
+            // string concatination
+        let k = "";
+        k = op.q1 + "<br>" + (op.q1 + op.q2) + "<br>" + (op.q1 + op.q2 + op.q3) + "<br>";
+        document.write(k);
+        document.writeln(op.q1);
+        document.writeln(op.q1 + op.q2);
+        document.writeln(op.q1 + op.q2 + op.q3);
+        var i, j = "";
+        for (i = 0; i < 15; i++) {
+            j += i + "<br>";
+        }
+        // HTML document write
+        document.write(j);
+        let di = {
+                key0: [14, 11, 2, 3, 4, 4, 55, 12, 4, 3, 3, 4],
+                key2: [14, 11, 2, 3, 4, 4, 55, 12, 4, 3, 3, 4],
+                key1: [14, 11, 2, 3, 4, 4, 55, 12, 4, 3, 3, 4],
+            }
+            // for in for key values
+        let y = di.length;
+        for (let k in di) {
+            console.log(k);
+        }
+        // for in for dictionary
+        for (let k in di) {
+            console.log(di[k]);
+        }
+        let y11 = [1023, 923, 823, 723, 623, 523, 423]
+            // for of for array
+        console.log('of');
+        for (let k of y11) {
+            console.log(k);
+        }
+        // for in for array
+        console.log('in');
+        for (let k in y11) {
+            console.log(k);
+        }
+        // while loop
+        let o = 0
+        while (o < 10) {
+            o++;
+            console.log(o);
+        }
+        // do while loop
+        do {
+            ++o;
+            console.log(o > 15);
+        } while (o < 19);
+    </script>
+
+</body>
+
+</html>

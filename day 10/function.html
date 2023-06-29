@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <p>the click occurance:</p>
+
+    <button id="d1" value="0" onclick="occ()"><input type="number" value="0" id="w1"></button>
+    <script>
+        var i = 0;
+
+        function occ() {
+            document.getElementById('w1').value = ++i;
+        }
+    </script>
+</body>
+
+</html>
