@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="11" onclick="this.innerHTML='HIIII...'">click</p>
+    <button onclick="document.getElementById('11').innerHTML='click'">back</button>
+
+    <p id="12" onclick="wer(this)">click</p>
+    <button onclick="document.getElementById('12').innerHTML='click'">back</button>
+    <script>
+        function wer(ID) {
+            ID.innerHTML = "OOOps";
+        }
+    </script>
+</body>
+
+</html>

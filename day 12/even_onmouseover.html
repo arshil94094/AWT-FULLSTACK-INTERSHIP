@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="q" onmouseover="we0(this)" onmouseout="we1(this)" style="height: 60px;width: 180px; background-color: blueviolet;">
+            hover
+        </div>
+
+        <div id="Q" onmousedown="we00(this)" onmouseup="we10(this)" style="height: 60px;width: 180px; background-color: blueviolet;margin-top: 60px;">
+            hover
+        </div>
+    </div>
+
+    <script>
+        function we0(q1) {
+            q1.innerHTML = "mouse is hover on th div";
+            q1.style.backgroundColor = "black";
+            q1.style.color = "white";
+        }
+
+        function we1(w) {
+            w.innerHTML = "hover";
+            w.style.backgroundColor = "blueviolet";
+        }
+
+        function we00(q1) {
+            q1.innerHTML = "mouse is hover on th div";
+            q1.style.backgroundColor = "black";
+            q1.style.color = "white";
+        }
+
+        function we10(w) {
+            w.innerHTML = "hover";
+            w.style.backgroundColor = "blueviolet";
+        }
+    </script>
+</body>
+
+</html>

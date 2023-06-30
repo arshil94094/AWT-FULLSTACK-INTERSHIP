@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Basic</title>
+
+    <script>
+        function stringLength() {
+            // Retrieving the values of form elements
+            var name = document.getElementById("name").value;
+            document.getElementById('length').innerText = name.length;
+        }
+
+        function currentDate() {
+            var d = new Date(); //JavaScript Date Class
+            var today = d.getDate() + '-' + (d.getMonth() + 1) + '-' +
+                d.getFullYear() + "  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "." + d.getMilliseconds();
+            document.getElementById('result').innerText = today;
+            console.log(d); /* print result in console*/
+        }
+
+        function show(q) {
+            let z = new Date();
+            if (q == 'da') {
+                document.getElementById('da').innerHTML = "day:           " + z.getDate();
+            } else if (q == 'mo') {
+                document.getElementById('mo').innerHTML = "month:         " + (z.getMonth() + 1);
+            } else if (q == 'year') {
+                document.getElementById('year').innerHTML = "year:        " + z.getFullYear();
+            } else if (q == 'ho') {
+                document.getElementById('ho').innerHTML = "hours:         " + z.getHours();
+            } else if (q == 'min') {
+                document.getElementById('min').innerHTML = "minutes:      " + z.getMinutes();
+            } else if (q == 'sec') {
+                document.getElementById('sec').innerHTML = "seconds:      " + z.getSeconds();
+            } else if (q == 'mili') {
+                document.getElementById('mili').innerHTML = "miliseconds: " + z.getMilliseconds();
+            }
+        }
+        var j = 0;
+        var ar = [];
+
+        function laps() {
+            var d = new Date();
+            let sec = d.getSeconds();
+            let ms = d.getMilliseconds();
+            let apd = sec + ": " + ms;
+            ar[j] = apd;
+            // ar.push(apd);
+            let o = ar.length;
+            // console.log(ar)
+            var h;
+            for (let i = 0; i < o; i++) {
+                if (i == 0) {
+                    h = ar[i] + "<br>";
+                } else {
+                    h = h + ar[i] + "<br>";
+                }
+
+            }
+            document.getElementById('x1').innerHTML = h;
+            j++;
+        }
+        // var tLaps = new Array;
+
+        // function laps() {
+        //     let s0, m0;
+        //     s0 = z.getSeconds();
+        //     m0 = z.getMilliseconds();
+        //     let k = s0 + ": " + m0;
+        //     tLaps.push(k);
+        //     for (let i = 0; i < tLaps.length; i++) {
+        //         document.getElementById('x1').innerHTML = tLaps[i] + "<br>";
+        //     }
+        // }
+    </script>
+    <!-- <script type="text/javascript" src="myjavascript.js"></script> -->
+</head>
+
+<body>
+    <button type="button" onclick="currentDate()">
+ Click me to display Date and Time. 
+ </button>
+    <button onclick="show('da')">day</button>
+    <button onclick="show('mo')">month</button>
+    <button onclick="show('year')">year</button>
+    <button onclick="show('ho')">hour</button>
+    <button onclick="show('min')">minute</button>
+    <button onclick="show('sec')">second</button>
+    <button onclick="show('mili')">milliseconds</button>
+    <p id="result"></p>
+    <p id="da"></p>
+    <p id="mo"></p>
+    <p id="year"></p>
+    <p id="ho"></p>
+    <p id="min"></p>
+    <p id="sec"></p>
+    <p id="mili"></p>
+    <br>
+    <button onclick="laps()">second:miliseconds</button>
+    <p id="x1"></p>
+    <div class="row">
+        <label>Full Name</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <button type="button" onclick="stringLength()">
+ Click to Get Length. 
+ </button>
+    <p id="length"></p>
+</body>
+
+
+</html>

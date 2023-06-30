@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-Cast</title>
+</head>
+
+<body>
+    <p id="q">
+
+    </p>
+    <script>
+        document.getElementById('q').innerHTML =
+            Number("3.14") + " " + "<br>" +
+            Number(Math.PI) + " " + "<br>" +
+            Number("  ") + " " + "<br>" +
+            Number("99 88") + " " + "<br>" +
+            Number("0.8.7") + " " + "<br>" +
+            "<br>" +
+            parseInt("3.14") + " " + "<br>" +
+            parseInt(Math.PI) + " " + "<br>" +
+            parseInt("  ") + " " + "<br>" +
+            parseInt("99 88") + " " + "<br>" +
+            parseInt("0.8.7") + " " + "<br>" +
+            "<br>" +
+            parseFloat("3.14") + " " + "<br>" +
+            parseFloat(Math.PI) + " " + "<br>" +
+            parseFloat("  ") + " " + "<br>" +
+            parseFloat("99 88") + " " + "<br>" +
+            parseFloat("0.8.7") + " " + "<br>";
+    </script>
+</body>
+
+</html>
