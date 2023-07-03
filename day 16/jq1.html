@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JQ/ajax.aspnetcdn.com_ajax_jQuery_jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#r").click(function() {
+                $("p").text("show");
+            });
+            $("input").change(function() {
+                $("p").css("background-color", "black");
+                $("p").css("color", "white");
+                $("input").css("background", $(input));
+                $("p").hide(4000);
+                $("body").css("background-color", $("#rr"));
+            });
+            $(".ss").click(function() {
+                $("#as").toggle("3000");
+            });
+            $(".btn0").click(function() {
+                alert("this is" + $("#p1").val());
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium totam, porro voluptatum recusandae, quod beatae velit a assumenda iste magnam eius incidunt nemo, quo deserunt ipsa itaque. Facilis, repudiandae soluta.</p>
+    <button id="r">click</button>
+    <button class="ss">toggle</button>
+    <button class="btn0">alert</button>
+    <p id="as">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque debitis assumenda, culpa minus modi tenetur magnam doloremque, nostrum reprehenderit laborum. Voluptatem modi esse culpa officiis et iste, laborum mollitia. Lorem, ipsum dolor
+        sit amet consectetur adipisicing elit. Magnam incidunt commodi assumenda praesentium quaerat labore consequatur perspiciatis quasi quos provident rerum cum illo optio accusantium nostrum, accusamus, repellendus ea ratione?</p>
+    <input type="text" value="#000" id="rr">
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+
+    </p>
+</body>
+
+</html>

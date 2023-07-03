@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JQ/ajax.aspnetcdn.com_ajax_jQuery_jquery-3.7.0.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("p").hide("slow", function() {
+                    alert("The paragraph is now hidden");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>click
+    </button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus quia minima necessitatibus, ut vel voluptas recusandae libero eius maxime iusto nam tenetur repellat ratione tempora vitae facilis quaerat qui.
+    </p>
+
+</body>
+
+</html>
