@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="feedstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body>
+    <form class="form" name="myForm">
+
+        <div class="title">FEEDBACK</div>
+
+        <div class="input-container ic1">
+            <input placeholder="Username" type="text" class="input" id="name">
+            <strong><span id="errorname">**Please Fill this Field** </span></strong>
+
+
+        </div>
+
+        <div class="input-container ic2">
+            <input placeholder="Email" type="text" class="input" id="email">
+            <strong><span id="errorEmail">**"@" / "." is requerired** </span></strong>
+
+
+        </div>
+        <div class="input-container ic2">
+            <input placeholder="Massage" type="text" class="input" id="msg">
+            <strong><span id="errormsg">**Please Fill this Field** </span></strong>
+
+
+        </div>
+        <button class="submit" type="button" id="submitbtn">submit</button>
+
+    </form>
+    <img src="haxagiones.jpg" alt="" id="leftbttm">
+    <!-- <input type="text" id="test">
+    <button class="pop" type="button">click</button> -->
+</body>
+<script src="script.js"></script>
+
+</html>

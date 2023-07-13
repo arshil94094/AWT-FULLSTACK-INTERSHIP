@@ -1,0 +1,348 @@
+.form-container h1 {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 340px;
+    font: 700 14px Menlo, Roboto Mono, monospace;
+    text-align: center;
+    color: #333;
+    margin-top: 55px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.form-container form {
+    border: 2px solid rgb(0, 0, 0, .1);
+    border-radius: 20px;
+    padding: 30px 20px;
+    background: #0392d9a3;
+}
+
+.form-container__title {
+    display: block;
+    font-size: 2em;
+    margin: 40px 0;
+}
+
+.form-container button {
+    user-select: none;
+    padding: 10px 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700 12px Arial;
+    text-transform: uppercase;
+    column-gap: 10px;
+    cursor: pointer;
+    background: rgb(0, 0, 0, .15);
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transition: all .1s ease-in-out;
+    outline: 2px solid transparent;
+    box-shadow: 0 1px 5px rgb(0, 0, 0, .1);
+}
+
+.form-container button:active {
+    transform: scale(.96);
+}
+
+.form-container button:disabled {
+    opacity: .7;
+    cursor: default;
+}
+
+.form-container button:focus:not(:active),
+.form-container button:focus:not(:hover) {
+    outline-offset: 2px;
+    outline-color: rgba(0, 0, 0, .25);
+}
+
+.form-container__sign-buttons {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(0, 0, 0, .1);
+}
+
+.form-container__sign-inputs label {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    justify-content: center;
+    user-select: none;
+}
+
+.form-container__sign-inputs input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font: 14px Menlo, monospace;
+    background: none;
+    border-radius: 6px;
+    border: 2px solid #eee;
+    background: #eee;
+    color: #333;
+    width: 100%;
+    outline: 2px solid transparent;
+}
+
+.form-container__sign-inputs input:focus,
+.form-container__sign-inputs input:active {
+    outline-color: #2196f3;
+    outline-offset: 2px;
+}
+
+.form-container .submit-button {
+    color: #fff;
+    background: #2196f3;
+}
+
+.form-container__auth-block {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 2px solid rgb(0, 0, 0, .1);
+    font-weight: normal;
+}
+
+.form-container__auth-block a {
+    color: #6495ed;
+    text-decoration: none;
+}
+
+.form-container__auth-block a:hover {
+    text-decoration: underline;
+}
+
+
+/* checkmark */
+
+.form-container__sign-inputs span {
+    position: absolute;
+    right: 25px;
+}
+
+.form-container__sign-inputs span::before {
+    position: absolute;
+    top: 14px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 3px solid #0e851a;
+    border-bottom: 3px solid #0e851a;
+    opacity: 0;
+    transform-origin: left top;
+    transform: rotate(-45deg) translateY(2px);
+    animation: none;
+    border-radius: 2px;
+}
+
+.form-container__sign-inputs legend {
+    padding: 0;
+    margin: 0;
+}
+
+.form-container__sign-inputs input:valid+span::before {
+    animation: checkmark linear both 0.6s;
+}
+
+.form-container__sign-inputs input:valid {
+    padding-right: 30px;
+}
+
+@keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    80% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    90% {
+        height: 4px;
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        height: 4px;
+        width: 10px;
+        opacity: 1;
+    }
+}
+
+.conform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    background-color: #ffffff4b;
+    color: rgb(97 97 97);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+    width: 35rem;
+    background-clip: border-box;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: -1;
+}
+
+.form .header {
+    position: relative;
+    background-clip: border-box;
+    background-color: #29be8b;
+    background-image: linear-gradient(to top right, #29be8b, #29be8b);
+    margin: 10px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, rgba(33, 150, 243, .4);
+    height: 7rem;
+    letter-spacing: 0;
+    line-height: 1.375;
+    font-weight: 600;
+    font-size: 1.9rem;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    padding: 1.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 200px;
+    width: 100%;
+    height: 2.75rem;
+    position: relative;
+}
+
+.input {
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    outline: 0;
+    color: rgb(69 90 100);
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.25rem;
+    padding: 0.75rem;
+    background-color: transparent;
+    border-radius: .375rem;
+    width: 100%;
+    height: 100%;
+}
+
+.input:focus {
+    border: 1px solid #29be8b;
+}
+
+.checkbox-container {
+    margin-left: -0.625rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox {
+    position: relative;
+    overflow: hidden;
+    padding: .55rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.027);
+    height: 35px;
+    width: 35px;
+}
+
+.checkbox input {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.checkbox-text {
+    cursor: pointer;
+}
+
+.sigin-btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 1rem;
+    text-align: center;
+    padding: .75rem 1.5rem;
+    background-color: #29be8b;
+    background-image: linear-gradient(to top right, #29be8b, #29be8b);
+    border-radius: .5rem;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    color: #fff;
+}
+
+.signup-link {
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-link a,
+.forget {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: .875rem;
+    margin-left: .25rem;
+    color: #29be8b;
+}
+
+.forget {
+    text-align: right;
+    font-weight: 600;
+}
+
+.contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form p {
+    font-size: 15px;
+}
